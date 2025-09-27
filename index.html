@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday, Baby</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Happy Birthday 💕</h1>
+      <p class="guide">Open the envelopes in order: 1 → 2 → 3 → 4 → 5</p>
+    </header>
+
+    <main class="stage" id="stage">
+      <!-- Center Image -->
+      <div class="center-photo">
+        <img src="center.jpg" alt="Center Photo" id="centerImage" />
+      </div>
+
+      <!-- Envelopes placed around -->
+      <div class="envelopes" id="envelopes"></div>
+    </main>
+
+    <!-- Popup Modal for Letters -->
+    <div class="modal" id="modal">
+      <div class="modal-bg" id="modalBg"></div>
+      <div class="modal-content">
+        <button class="close-btn" id="closeBtn">✕</button>
+        <h2 id="modalTitle">Letter</h2>
+        <div class="letter-text" id="letterText" style="font-size:12px;"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
